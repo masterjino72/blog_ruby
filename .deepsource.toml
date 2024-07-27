@@ -1,10 +1,14 @@
 version = 1
 
 [[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "angular",
+    "angularjs"
+  ]
+  environment = ["jquery"]
+
+[[analyzers]]
 name = "ruby"
-
-[[transformers]]
-name = "rubocop"
-
-[[transformers]]
-name = "standardrb"
